@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer></script>
+    <script src="js/index.js" defer></script>
+    <title>Js bootstrap</title>
+  </head>
+  <body>
+    <header class="bg-dark text-white">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo.svg"
+              alt="law-logo"
+              width="30"
+              height="30" />
+          </a>
+          <a class="navbar-brand text-white" href="#">Estudio Jurídico</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            data-bs-theme="dark"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Hacer algo</a></li>
+                  <li><a class="dropdown-item" href="#">hacer otra cosa</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Otro </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div
+          id="liveToast"
+          class="toast"
+          role="alert"
+          aria-live="assertive"
+          aria-atomic="true">
+          <div class="toast-header">
+            <img
+              src="./images/ok.svg"
+              class="rounded me-2"
+              alt="ok"
+              width="20px" />
+            <strong class="me-auto">E-mail enviado</strong>
+            <small>Hace un momento</small>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="toast"
+              aria-label="Close"></button>
+          </div>
+          <div class="toast-body">Muchas gracias por contactarnos.</div>
+        </div>
+      </div>
+      <form class="min-w-300px">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp" />
+          <div id="emailHelp" class="form-text">
+            Nunca compartiremos tu e-mail con nadie.
+          </div>
+        </div>
+        <p>Seleccione los servicios por los que quiere consultar.</p>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckDefault" />
+          <label class="form-check-label" for="flexCheckDefault">
+            Laborales
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked" />
+          <label class="form-check-label" for="flexCheckChecked">
+            Penales
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="flexCheckChecked" />
+          <label class="form-check-label" for="flexCheckChecked">
+            Migratorios
+          </label>
+        </div>
+        <button type="submit" class="mt-5 btn btn-primary" id="liveToastBtn">
+          Enviar
+        </button>
+      </form>
+    </main>
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <h5>Contacto</h5>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@estudiojuridico.com</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Enlaces Rápidos</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Inicio</a></li>
+              <li><a href="#" class="text-white">Nosotros</a></li>
+              <li><a href="#" class="text-white">Servicios</a></li>
+              <li><a href="#" class="text-white">Blog</a></li>
+              <li><a href="#" class="text-white">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Síguenos</h5>
+            <a href="#" class="text-white mr-2">Facebook</a>
+            <a href="#" class="text-white mr-2">Twitter</a>
+            <a href="#" class="text-white">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="bg-dark text-center py-3">
+        &copy; 2024 Estudio Jurídico. Todos los derechos reservados.
+      </div>
+    </footer>
+  </body>
+</html>

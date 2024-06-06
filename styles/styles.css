@@ -1,0 +1,12 @@
+main {
+  padding: 10px 50px;
+}
+
+.nav-toggler-icon {
+  color: white;
+}
+
+form {
+  min-width: 280px;
+  max-width: 500px;
+}
